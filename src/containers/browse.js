@@ -5,7 +5,6 @@ import { FirebaseContext } from '../context/firebase';
 import { SelectProfileContainer } from './profiles';
 import { FooterContainer } from './footer';
 
-
 export function BrowseContainer() {
     const [category, setCategory] = useState('series')
     const [profile, setProfile] = useState({});
@@ -74,5 +73,6 @@ export function BrowseContainer() {
             </Header>
             <FooterContainer />
         </>)
-        : (<SelectProfileContainer user={user} setProfile={setProfile} />);
+        : (<SelectProfileContainer user={user} setProfile={setProfile} />
+    );
 }
